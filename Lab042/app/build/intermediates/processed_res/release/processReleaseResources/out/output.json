@@ -1,0 +1,1 @@
+[{"outputType":{"type":"PROCESSED_RES"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"app-release-unsigned.apk","fullName":"release","baseName":"release"},"path":"resources-release.ap_","properties":{"packageId":"edu.calvin.cs262.lab04","split":"","minSdkVersion":"21"}}]
