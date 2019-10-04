@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Homework1</string>
+    <string name="value_2">Value 2:</string>
+    <string name="sub">sub</string>
+    <string name="div">Div</string>
+    <string name="add">add</string>
+    <string name="mult">Mult</string>
+    <string name="results">Results</string>
+    <string name="enter_value_1">Enter value 1</string>
+</resources>
