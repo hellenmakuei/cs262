@@ -1,4 +1,0 @@
-#Fri Sep 27 00:55:24 EDT 2019
-base.0=/Users/hellenmakuei/Desktop/Lab042/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
