@@ -1,0 +1,4 @@
+#Fri Sep 20 19:44:57 EDT 2019
+base.0=/home/nrs32/AndroidStudioProjects/Lab03/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
