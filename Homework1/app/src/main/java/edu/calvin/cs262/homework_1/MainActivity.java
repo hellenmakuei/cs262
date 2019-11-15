@@ -14,10 +14,19 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import edu.calvin.cs262.homework1.R;
+/*
+* Create caculator that does the addition, substraction, multiplication and division
+* the return the result
+ */
+
 
 public class MainActivity extends AppCompatActivity {
- private Button addition, subtraction, multipication, division;
+
+
+
+ private Button addition, subtraction, multiplication, division;
  private EditText et1,et2,et3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +34,18 @@ public class MainActivity extends AppCompatActivity {
 
         addition = (Button) findViewById(R.id.addbutton);
         subtraction = (Button)findViewById(R.id.SubButton);
-        multipication = (Button)findViewById(R.id.multButton);
+        multiplication = (Button)findViewById(R.id.multButton);
         division = (Button)findViewById(R.id.divbutton);
 
         et1 = (EditText)findViewById(R.id.EditTextet1);
         et2 = (EditText)findViewById(R.id.EditTextet2);
         et3 = (EditText)findViewById(R.id.EditTextet3);
+
+
+        /*
+         * method for the addition
+         *
+         */
 
         addition.setOnClickListener(new View.OnClickListener()
         {
@@ -52,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }});
 
+
+        /*
+         * method for the subtraction
+         *
+         */
             subtraction.setOnClickListener(new View.OnClickListener(){
 
                 @Override
@@ -73,7 +93,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            multipication.setOnClickListener(new View.OnClickListener(){
+
+
+            /*
+            * method for the multiplication
+            *
+             */
+            multiplication.setOnClickListener(new View.OnClickListener(){
 
                 @Override
 
@@ -94,6 +120,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+
+        /*
+         * method for the division that does division
+         *
+         */
             division.setOnClickListener(new View.OnClickListener() {
 
                 @Override

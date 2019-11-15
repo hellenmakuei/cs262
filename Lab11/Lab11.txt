@@ -1,0 +1,24 @@
+Lab11.txt:
+Documentation changes for homework1 , homework2 and homework3
+
+Homework1: Calculator app
+add comment to the method Subtraction , multiplication, division  and additrion 
+Otherwise, I already commented my xml.
+I had already commented much of MainActivity; even so, I turned function header comments into proper javadoc comments.
+I also fixed a logic error. For selecting operators, if no operators exist, the operator will now be an empty string
+	instead of an index error (fix location: onNothingSelected)
+
+Homework2: Fetching Player Data from a monopoly database.
+
+Updated comments to xml layout and menu; labeled UI elements.
+
+Added javadoc to all functions of all 6 Java classes in homework2
+Ran android's auto-formatting, too.
+In MainActivity.java, added in-function comments to highlight various code sections.
+In MainActivity.fetchPlayer(), deleted a commented out line of code.
+In MainActivity helper functions (private functions at bottom, I added in-function comments to highlight code objectives.
+
+Homework3: Implement the monopoly database for lab 7-8
+Added javadoc to all functions of all 6 Java classes in
+ homework3
+

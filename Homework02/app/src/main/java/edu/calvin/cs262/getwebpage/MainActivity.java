@@ -15,6 +15,7 @@ import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
@@ -25,6 +26,10 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Scanner;
+
+
 
 
     public class MainActivity extends AppCompatActivity
@@ -40,7 +45,11 @@ import org.json.JSONObject;
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            // Create protocol options dropdown
+            /**
+              * Create protocol options dropdown
+
+             */
+
             protocol = (Spinner) findViewById(R.id.protocol_dropdown);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, dropdownOptions);
             protocol.setAdapter(adapter);
@@ -49,7 +58,11 @@ import org.json.JSONObject;
             pageSourceText = (TextView)findViewById(R.id.pageSourceText);
         }
 
-        // Create connection and URL string combining protocol and source address
+
+        /**
+         * Create connection and URL string combining protocol and source address
+          */
+
         public void getPageSource(View view) {
             // Get the search string from the input field.
             String urlString = websiteURL.getText().toString();
@@ -71,7 +84,12 @@ import org.json.JSONObject;
                 networkInfo = connMgr.getActiveNetworkInfo();
             }
 
-            // If user has given input and we are connected to network
+
+
+            /**
+             *  If user has given input and we are connected to network
+              */
+
             if (networkInfo != null && networkInfo.isConnected()
                     && urlString.length() != 0 && protocolType.length() != 0) {
 
@@ -95,7 +113,12 @@ import org.json.JSONObject;
             }
         }
 
-        // Call URLSearch to retrieve source code from the given URL
+
+        /**
+        * Call URLSearch to retrieve source code from the given URL
+        */
+
+
         @NonNull
         @Override
         public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
@@ -106,7 +129,13 @@ import org.json.JSONObject;
             return new URLSearch(this, urlSource);
         }
 
-        // Get the results from URLSearch and display them
+
+
+        /**
+        * Get the results from URLSearch and display them
+
+         */
+
         @Override
         public void onLoadFinished(@NonNull Loader<String> loader, String data) {
             String results = data;
@@ -119,7 +148,12 @@ import org.json.JSONObject;
             }
         }
 
-        // Required stub, intentionally unused
+
+        /*
+         *Required stub, intentionally unused
+         */
+
+
         @Override
         public void onLoaderReset(@NonNull Loader<String> loader) {
         }
